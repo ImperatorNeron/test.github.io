@@ -1,0 +1,259 @@
+.main {
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.root {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+.attention-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 0 50px;
+    min-height: 500px;
+}
+
+.attention-photo {
+    background-image: url("../photos/var.jpg");
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.attention-text {
+    flex: 1;
+    font-size: 1.3rem;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    padding-bottom: 30px;
+    border-bottom: 2px dashed gray;
+}
+
+.addition {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 70px 120px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    width: 1120px;
+    margin: 0 auto;
+    height: 500px;
+    border-radius: 0 0 10px 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.right,
+.left {
+    flex: 1;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.left {
+    background-image: url("../photos/IMG-2b8247499ea4fa0b29d882daa17c96c6-V.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 0 10px;
+}
+
+.contacts-us {
+    background-color: rgba(0, 0, 0, 0.699);
+    height: 100%;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.field {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(236, 236, 236, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+    padding: 10px;
+}
+
+.field:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #1d2228;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #454545;
+}
+
+.field:focus {
+    border: 2px solid rgba(30, 85, 250, 0.47);
+    background-color: #fff;
+}
+
+@media (max-width: 1220px) {
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .attention-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .attention-photo {
+        flex: none;
+        height: 400px;
+    }
+
+    .attention-text {
+        flex: none;
+    }
+
+    .contacts-us{
+        border-radius: 0;
+    }
+
+    .left{
+        border-radius: 0;
+    }
+
+    .contact-form {
+        flex-direction: column;
+        border-radius: 0 0 10px 10px;
+        height: auto;
+    }
+
+    .left {
+        height: 400px;
+        flex: none;
+    }
+
+    .right {
+        flex: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .attention-text {
+        font-size: 1.1rem;
+    }
+
+    .addition {
+        font-size: 1.3rem;
+        margin: 70px 0;
+    }
+
+    .attention-container {
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .main {
+        padding: 100px 15px;
+    }
+
+    .main-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .root {
+        font-size: 1rem;
+    }
+
+    .attention-text {
+        font-size: 1rem;
+    }
+    
+    .addition{
+        font-size: 1.2rem;
+    }
+    .contacts-us{
+        font-size: 1.2rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    .left{
+        height: 270px;
+    }
+}
+
+@media (max-width: 400px) {
+    .attention-container{
+        gap: 25px;
+    }
+    .addition{
+        margin: 80px 0 30px 0;
+    }
+    .attention-photo{
+        height: 250px;
+    }
+    .contacts-us{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-title{
+        font-size: 1.5rem;
+    }
+
+    .root{
+        font-size: 0.8rem;
+    }
+
+    .attention-text{
+        font-size: 0.8rem;
+    }
+
+    .addition{
+        font-size: 0.9rem;
+    }
+}

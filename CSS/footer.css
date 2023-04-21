@@ -1,0 +1,135 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 100px 30px 100px;
+    gap: 55px;
+    background-color: #1d2228;
+    color: white;
+}
+
+.footer-top,
+.header-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.header-menu {
+    gap: 70px;
+}
+
+.product,
+.service,
+.about-company,
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-point {
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+}
+
+.footer-menu {
+    font-size: 18px;
+    color: white;
+}
+
+.rights {
+    font-size: 18px;
+}
+
+.inverted {
+    filter: invert(1);
+}
+
+.media {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: auto;
+    align-items: center;
+}
+
+.footer-media {
+    display: flex;
+    gap: 40px;
+}
+
+.title-footer {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.contact-with-us {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+.contact-with-us:hover {
+    background-color: rgb(186, 207, 226);
+    transition-duration: 0.3s;
+}
+
+.arrow {
+    display: none;
+}
+
+@media (max-width: 1200px){
+    .main-point{
+        font-size: 20px;
+    }
+    .footer-menu, .rights{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        padding: 40px 30px 30px 30px;
+    }
+
+    .header-menu {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 820px) {
+    .header-menu {
+        flex-direction: column;
+    }
+
+    .footer-menu {
+        display: none;
+    }
+
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .media {
+        margin: 50px 0 0 0;
+    }
+
+    .nav-point {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .arrow {
+        display: block;
+        background-image: url("../photos/arrow-down-sign-to-navigate.png");
+        background-size: cover;
+        background-position: center;
+        filter: invert(1);
+        width: 30px;
+    }
+
+}

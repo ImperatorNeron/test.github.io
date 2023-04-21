@@ -1,0 +1,172 @@
+.main {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s;
+}
+
+.slide {
+    flex: 0 0 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.slider__btn--prev {
+    left: 0;
+}
+
+.slider__btn--next {
+    right: 0;
+}
+
+.photo-1 {
+    background-image: url("../photos/IMG-2107bf0e2aaef0070871ba7c40aa1279-V.jpg");
+}
+
+.photo-2 {
+    background-image: url("../photos/IMG-276a777b2f0b8df4285dd2841c25883b-V.jpg");
+}
+
+.photo-3 {
+    background-image: url("../photos/IMG-2b8247499ea4fa0b29d882daa17c96c6-V.jpg");
+}
+
+.photo-4 {
+    background-image: url("../photos/IMG-ebcb73e4e5086a1387c394aec7790809-V.jpg");
+}
+
+.photo-5 {
+    background-image: url("../photos/IMG-916ccdc18a2e4e73241a5b9fd35a9115-V.jpg");
+}
+
+/* .gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.photos {
+    display: flex;
+    gap: 20px;
+    height: 660px;
+}
+
+.left,
+.right {
+    background-color: rgba(0, 0, 0, 0.511);
+    width: 120px;
+    background-size: cover;
+}
+
+.left {
+    background-image: url('../photos/IMG-2107bf0e2aaef0070871ba7c40aa1279-V.jpg');
+    background-position: right;
+}
+
+.right {
+    background-image: url('../photos/IMG-2107bf0e2aaef0070871ba7c40aa1279-V.jpg');
+    background-position: left;
+}
+
+.middle {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.photo-1{
+    background-image: url("../photos/IMG-2107bf0e2aaef0070871ba7c40aa1279-V.jpg");
+}
+
+.photo-2{
+    background-image: url("../photos/IMG-276a777b2f0b8df4285dd2841c25883b-V.jpg");
+}
+
+.photo-3 {
+    background-image: url("../photos/IMG-2b8247499ea4fa0b29d882daa17c96c6-V.jpg");
+}
+
+.photo-4 {
+    background-image: url("../photos/IMG-ebcb73e4e5086a1387c394aec7790809-V.jpg");
+}
+
+.photo-5{
+    background-image: url("../photos/IMG-916ccdc18a2e4e73241a5b9fd35a9115-V.jpg");
+}
+
+.mini-photos {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin: -50px 0 70px 0;
+}
+
+.left-arrow,
+.right-arrow {
+    height: 30px;
+    width: 30px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.676);
+    background-size: cover;
+    background-position: center;
+    transition-duration: 0.3s;
+}
+
+.photo {
+    width: 210px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+}
+
+.left-arrow img,
+.right-arrow img {
+    filter: invert(1);
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    background-color: black;
+    transition-duration: 0.3s;
+}
+
+.black {
+    background-color: rgba(255, 255, 255, 0.39);
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.3s;
+}
+
+.active .black {
+    border: 2px solid blue;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.photo:hover .black {
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.3s;
+} */

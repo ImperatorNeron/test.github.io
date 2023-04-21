@@ -1,0 +1,242 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding-top: 70px;
+}
+
+.photo{
+    /* background-image: url('https://grunwald.ru/upload/resize_cache/iblock/dbf/7ps1t9305lnqn5qiw6qzb5qdse8hd0wj/1920_532_240cd750bba9870f18aada2478b24840a/%D0%9F%D0%BE%D0%BB%D1%83%D0%BF%D1%80%D0%B8%D1%86%D0%B5%D0%BF%D1%8B%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%BE%D0%B2%D0%BE%D0%B7%D1%8B%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.webp'); */
+    background-image: url("../photos/IMG-276a777b2f0b8df4285dd2841c25883b-V.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.main-title{
+    margin-left: 130px;
+    text-shadow: 4px 4px 10px #ff4444;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 100px;
+}
+
+.cards-container-title{
+    font-size: 3rem;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: black;
+    gap: 20px;
+    padding: 30px;
+    border-bottom: 10px solid rgb(255, 255, 255);
+    transition-duration: 0.3s;
+}
+
+.card-photo{
+    height: 170px;
+    transition: transform 0.2s ease-in-out; /* додали зміну розміру зображення з ефектом плавності */
+}
+
+.card:hover .card-photo{
+    transform: scale(1.05); /* збільшення розміру зображення на 20% при наведенні */
+}
+
+.card:hover{
+    border-bottom: 10px solid black;
+    transition-duration: 0.3s;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.container-about, .about-topic{
+    display: flex;
+}
+
+.about-topic{
+    flex-direction: column;
+    width: 65%;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e5e5;
+    transform: skew(20deg);
+    box-sizing: border-box;
+    margin: 0 -120px;
+}
+
+.about-topic-help{
+    transform: skew(-20deg);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px 170px;
+}
+
+.topic-title{
+    font-size: 1.8rem;
+}
+
+.topic-text{
+    font-size: 1.1rem;
+}
+
+.about-photo{
+    background-image: url("../photos/IMG-276a777b2f0b8df4285dd2841c25883b-V.jpg");
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 135px;
+}
+
+@media (max-width: 1400px){
+    .about-topic{
+        width: 70%;
+    }
+    .about-topic-help{
+        padding: 50px 100px 50px 170px;
+    }
+}
+
+@media (max-width: 1200px){
+   .topic-text{
+    font-size: 1.1rem;
+   }
+}
+
+@media (max-width: 950px){
+    .container-about{
+        flex-direction: column-reverse;
+        margin: 0 30px 50px 30px;
+        padding: 0;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .about-photo{
+        height: 300px;
+        width: 100%;
+        flex: none;
+    }
+    .about-topic, .about-topic-help{
+        transform: skew(0deg);
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+
+    .about-topic{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 910px){
+    .card{
+        width: 100%;
+        height: auto;
+    }
+
+    .card-photo{
+        flex: 1;
+        height: auto;
+        width: auto;
+        padding: 40px 40px 0 40px;
+    }
+    .card-content{
+        flex: 1;
+        height: auto;
+        width: auto;
+        padding: 0 20px 20px 20px;
+    }
+
+    .card-title{
+        font-size: 2rem;
+    }
+
+    .card-mini-text{
+        font-size: 1.2rem;
+    }
+
+    .main-title{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        font-size: 2.2rem;
+    }
+    .cards-container{
+        padding: 0 15px;
+    }
+    .card{
+        padding: 0;
+    }
+    .cards-container-title{
+        font-size: 2.1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px){
+    .topic-title{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 550px){
+    .photo{
+        height: 300px;
+    }
+}
+
+@media (max-width: 400px){
+    .photo{
+        height: 230px;
+    }
+    .about-photo{
+        height: 170px;
+    }
+    .topic-title{
+        font-size: 1.4rem;
+    }
+
+    .topic-text{
+        font-size: 1rem;
+    }
+    .container-about{
+        margin: 0 15px 15px 15px;
+    }
+}
