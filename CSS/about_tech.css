@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    gap: 50px;
+    gap: 35px;
     grid-template-areas:
         "title photo"
         "text photo"
@@ -27,7 +27,7 @@
     background-image: url('../photos/IMG-8bac9a7a421e74bbbfe34a56a86eecf5-V.jpg');
     background-size: cover;
     background-position: center;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -20px;
     border-radius: 5px;
 }
 
@@ -52,7 +52,7 @@
 
 @media (max-width: 1279px) {
     .container-about-tech {
-        margin: 130px 60px;
+        margin: 130px 30px;
         grid-template-areas:
             "photo photo"
             "photo photo"
@@ -81,11 +81,16 @@
         height: 300px;
     }
     .container-about-tech{
-        margin: 100px 30px;
+        margin: 70px 30px;
     }
 }
 
 @media (max-width: 600px) {
+
+    .container-about-tech{
+        margin: 70px 15px;
+    }
+
     .about-tech-img {
         height: 200px;
     }
